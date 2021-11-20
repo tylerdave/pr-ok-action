@@ -1,13 +1,18 @@
+from importlib import metadata
 
 import click
 
+
 @click.group()
 def repok():
-    """GitHub Action"""
+    """Check that repo is OK"""
+
 
 @repok.command()
 def version():
-    click.echo("Version!")
+    version = metadata.version("repok")
+    click.echo(f"repok version {version}")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     repok()
