@@ -1,14 +1,18 @@
 [tool.poetry]
-name = "pr-ok-action"
-version = "0.1.0"
-description = "GitHub Action to ensure PRs meet requirements"
+name = "RepoK"
+version = "0.1.1"
+description = "CLI + GitHub Action to ensure commits and PRs meet requirements"
 authors = ["Dave Forgac <tylerdave@tylerdave.com>"]
 license = "MPL-2.0"
 
 [tool.poetry.dependencies]
 python = "^3.9"
+click = "^8.0.3"
 
 [tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+repok = "repok.cli:repok"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

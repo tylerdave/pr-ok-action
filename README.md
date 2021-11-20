@@ -1,2 +1,3 @@
-# pr-ok-action
-Custom GitHub Action to verify that a PR meets requirements
+# RepoK
+
+CLI + GitHub Aciton to ensure your repo is OK (commits, PRs, etc. conform to your requrements.)
